@@ -1,0 +1,4 @@
+<form class="todo-form" (ngSubmit)="create(); todoForm.reset();" #todoForm="ngForm">
+    <input name="title" [(ngModel)]="newTodoTitle" type="text" placeholder="Что нужно сделать?" required>
+    <button [disabled]="todoForm.form.invalid" type="submit">добавить</button>
+</form>

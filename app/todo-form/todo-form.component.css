@@ -1,0 +1,22 @@
+/* Todo form */
+.todo-form {
+    display: flex;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.todo-form input {
+    flex: 1;
+}
+
+.todo-form input:focus {
+    border: 1px solid #1976D2;
+}
+
+.todo-form input:focus.ng-invalid.ng-dirty {
+    border: 1px solid #dd0031;
+}
+
+.todo-form button {
+    margin-left: 16px;
+}

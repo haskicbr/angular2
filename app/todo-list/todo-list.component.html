@@ -1,0 +1,4 @@
+<h1 >my event</h1>
+<div class="todo-list" *ngIf="todos.length > 0">
+    <todo-item [todo]="todo" [testData]="'test data todo-list.component.html'" *ngFor="let todo of todos" (deleteItem)="deleteItem($event)"></todo-item>
+</div>
